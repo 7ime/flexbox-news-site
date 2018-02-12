@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Flexbox</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="is-home">
+
+	<header class="main-header">
+
+		<nav class="main-menu">
+			<input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+			<label for="menu" class="toggleMenu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			<ul>
+				<li class="is-active"><a href="#" class="is-active">Главное</a></li>
+				<li><a href="#">Политика</a></li>
+				<li><a href="#">Общество</a></li>
+				<li><a href="#">В мире</a></li>
+				<li><a href="#">Курсы валют</a></li>
+				<li>
+					<input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+					<a href="#">Спорт</a>
+					<label for="sub_m1" class="toggleSubmenu"></label>
+					<ul>
+						<li><a href="#">Футбол</a></li>
+						<li><a href="#">Хоккей</a></li>
+						<li><a href="#">Баскетбол</a></li>
+						<li><a href="#">Гандбол</a></li>
+						<li><a href="#">Теннис</a></li>
+						<li><a href="#">Плавание</a></li>
+						<li><a href="#">Биатлон</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Экономика</a></li>
+				<li><a href="#">Культура</a></li>
+				<li><a href="#">Технологии</a></li>
+				<li><a href="#">Наука</a></li>
+				<li><a href="#">Авто</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+
+	
+	<main class="columns">
+		<aside class="column column-left">
+			<div class="sidebar-left">
+				<header class="sidebar-left-title">
+					<h2>В новостях</h2>
+				</header>
+				<div class="sidebar-left-content">
+					<article class="article-tags">
+						<ul>
+							<li><a href="#">Олимпиада</a></li>
+							<li><a href="#">Сирия</a></li>
+							<li><a href="#">Украина</a></li>
+							<li><a href="#">Белый дом</a></li>
+							<li><a href="#">Кремль</a></li>
+							<li><a href="#">Евросоюз</a></li>
+							<li><a href="#">Россия</a></li>
+							<li><a href="#">Беларусь</a></li>
+							<li><a href="#">Курсы валют</a></li>
+							<li><a href="#">Нефть</a></li>
+							<li><a href="#">Иран</a></li>
+							<li><a href="#">Северная Корея</a></li>
+							<li><a href="#">Канада</a></li>
+							<li><a href="#">Мексика</a></li>
+							<li><a href="#">Биатлон</a></li>
+							<li><a href="#">Лига чемпионов</a></li>
+						</ul>
+					</article>
+				</div>
+				<header class="sidebar-left-title">
+					<h2>Погода в Минске</h2>
+				</header>
+				<div class="sidebar-left-content">
+					<article class="weather-block">
+						<div class="weather">
+							<div class="weather-day">
+								<strong>Сегодня</strong>
+								<i class="fa fa-cloud"></i>
+								<span>-3&#176; -4&#176;</span>
+							</div>
+							<div class="weather-day">
+								<strong>Вторник</strong>
+								<i class="fa fa-cloud"></i>
+								<span>-1&#176; -2&#176;</span>
+							</div>
+							<div class="weather-day">
+								<strong>Среда</strong>
+								<i class="fa fa-cloud"></i>
+								<span>0&#176; +1&#176;</span>
+							</div>
+						</div>
+						<div class="weather-more">
+							<a href="#">Погода на 10 дней</a>
+						</div>
+					</article>
+				</div>
+				<header class="sidebar-left-title">
+					<h2>Самые комментируемые</h2>
+				</header>
+				<div class="sidebar-left-content">
+					<article class="commented">
+						<a href="#" class="most-commented">
+							<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</strong>
+							<span>423 комментария</span>
+						</a>
+						<a href="#" class="most-commented">
+							<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</strong>
+							<span>382 комментария</span>
+						</a>
+						<a href="#" class="most-commented">
+							<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</strong>
+							<span>293 комментария</span>
+						</a>			
+					</article>
+				</div>
+			</div>
+		</aside><!-- //column-left -->
+		<section class="column column-main">
+
+			<div class="news-section">
+				<header class="news-section-title">
+					<h2>Новость дня</h2>
+				</header>
+
+				<article class="article-news">
+					<figure class="article-news-days-img">
+						<a href="#" class="prime-news"><img src="img/800-2.jpg" alt=""></a>
+						<a href="#">230 комментариев</a>
+					</figure>
+					<div class="article-news-body">
+						<header class="article-news-title">
+							<a href="#"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3></a>
+							<span>BBC News</span>
+						</header>
+						<div class="article-news-content">
+							<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, labore rerum natus! Asperiores et esse voluptatibus veniam repellendus dicta, aut. Fugiat id magni placeat repellat minima alias. Animi natus, nulla.</p></a>
+						</div>
+						<div class="article-news-related">
+							<strong>Связанные новости</strong>
+							<div class="news-related-block">
+								<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, quisquam. Esse, repellat?</a>
+								<time datetime="2018-02-10T12:00+02:00">10 часов назад</time>
+							</div>
+							<div class="news-related-block">
+								<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, officia.</a>
+								<time datetime="2018-02-10T12:00+02:00">9 февраля 2018 г.</time>
+							</div>
+							<div class="news-related-block">
+								<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
+								<time datetime="2018-02-10T12:00+02:00">6 февраля 2018 г.</time>
+							</div>
+							<div class="news-related-block">
+								<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ex, officia excepturi temporibus placeat deleniti.</a>
+								<time datetime="2018-02-10T12:00+02:00">1 февраля 2018 г.</time>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+			
+			<div class="news-section">
+				<header class="news-section-title">
+					<h2>В мире</h2>
+				</header>
+
+				<article class="article-news">
+					<figure class="article-news-img">
+						<a href="#"><img src="img/800.jpg" alt=""></a>
+					</figure>
+					<div class="article-news-body">
+						<header class="article-news-title">
+							<a href="#"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3></a>
+							<span>BBC News</span>
+						</header>
+						<div class="article-news-content">
+							<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, labore rerum natus! Asperiores et esse voluptatibus veniam repellendus dicta, aut. Fugiat id magni placeat repellat minima alias. Animi natus, nulla.</p></a>
+						</div>
+						<footer class="article-news-secondary-info">
+							<span>1 час назад</span>
+							<a href="#">50 комментариев</a>
+						</footer>
+					</div>
+				</article>
+
+				<article class="article-news">
+					<figure class="article-news-img">
+						<a href="#"><img src="img/800.jpg" alt=""></a>
+					</figure>
+					<div class="article-news-body">
+						<header class="article-news-title">
+							<a href="#"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3></a>
+							<span>BBC News</span>
+						</header>
+						<div class="article-news-content">
+							<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, labore rerum natus! Asperiores et esse voluptatibus veniam repellendus dicta, aut. Fugiat id magni placeat repellat minima alias. Animi natus, nulla.</p></a>
+						</div>
+						<footer class="article-news-secondary-info">
+							<span>1 час назад</span>
+							<a href="#">50 комментариев</a>
+						</footer>
+					</div>
+				</article>
+				<article class="article-news">
+					<figure class="article-news-img">
+						<a href="#"><img src="img/800.jpg" alt=""></a>
+					</figure>
+					<div class="article-news-body">
+						<header class="article-news-title">
+							<a href="#"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3></a>
+							<span>BBC News</span>
+						</header>
+						<div class="article-news-content">
+							<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, labore rerum natus! Asperiores et esse voluptatibus veniam repellendus dicta, aut. Fugiat id magni placeat repellat minima alias. Animi natus, nulla.</p></a>
+						</div>
+						<footer class="article-news-secondary-info">
+							<span>1 час назад</span>
+							<a href="#">50 комментариев</a>
+						</footer>
+					</div>
+				</article>
+				<div class="more-news">
+					<a href="#">Больше новостей в мире <i class="fa fa-arrow-right"></i></a>
+				</div>
+			</div>
+			<div class="news-section">
+				<header class="news-section-title">
+					<h2>Экономика</h2>
+				</header>
+
+				<article class="article-news">
+					<figure class="article-news-img">
+						<a href="#"><img src="img/800.jpg" alt=""></a>
+					</figure>
+					<div class="article-news-body">
+						<header class="article-news-title">
+							<a href="#"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3></a>
+							<span>BBC News</span>
+						</header>
+						<div class="article-news-content">
+							<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, labore rerum natus! Asperiores et esse voluptatibus veniam repellendus dicta, aut. Fugiat id magni placeat repellat minima alias. Animi natus, nulla.</p></a>
+						</div>
+						<footer class="article-news-secondary-info">
+							<span>1 час назад</span>
+							<a href="#">50 комментариев</a>
+						</footer>
+					</div>
+				</article>
+
+				<article class="article-news">
+					<figure class="article-news-img">
+						<a href="#"><img src="img/800.jpg" alt=""></a>
+					</figure>
+					<div class="article-news-body">
+						<header class="article-news-title">
+							<a href="#"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3></a>
+							<span>BBC News</span>
+						</header>
+						<div class="article-news-content">
+							<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, labore rerum natus! Asperiores et esse voluptatibus veniam repellendus dicta, aut. Fugiat id magni placeat repellat minima alias. Animi natus, nulla.</p></a>
+						</div>
+						<footer class="article-news-secondary-info">
+							<span>1 час назад</span>
+							<a href="#">50 комментариев</a>
+						</footer>
+					</div>
+				</article>
+				<article class="article-news">
+					<figure class="article-news-img">
+						<a href="#"><img src="img/800.jpg" alt=""></a>
+					</figure>
+					<div class="article-news-body">
+						<header class="article-news-title">
+							<a href="#"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3></a>
+							<span>BBC News</span>
+						</header>
+						<div class="article-news-content">
+							<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, labore rerum natus! Asperiores et esse voluptatibus veniam repellendus dicta, aut. Fugiat id magni placeat repellat minima alias. Animi natus, nulla.</p></a>
+						</div>
+						<footer class="article-news-secondary-info">
+							<span>1 час назад</span>
+							<a href="#">50 комментариев</a>
+						</footer>
+					</div>
+				</article>
+				<div class="more-news">
+					<a href="#">Больше новостей в экономике <i class="fa fa-arrow-right"></i></a>
+				</div>
+			</div>
+		</section><!-- //column-main -->
+		<aside class="column column-right">
+			<div class="sidebar-right">
+				<header class="sidebar-right-title">
+					<h2>Последние</h2>
+				</header>
+				<div class="sidebar-right-content">
+					<article class="article-right-body">
+						<div class="article-right-last-news">
+							<a href="#" class="last-new">
+								<time datetime="2018-02-10T12:00+02:00">20:40 В Мире</time>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</span>
+							</a>
+							<a href="#" class="last-new">
+								<time datetime="2018-02-10T12:00+02:00">19:11 Финансы</time>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</span>
+							</a>
+							<a href="#" class="last-new">
+								<time datetime="2018-02-10T12:00+02:00">18:36 Экономика</time>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</span>
+							</a>
+							<a href="#" class="last-new">
+								<time datetime="2018-02-10T12:00+02:00">17:11 Политика</time>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</span>
+							</a>
+							<a href="#" class="last-new">
+								<time datetime="2018-02-10T12:00+02:00">16:40 Технологии</time>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</span>
+							</a>
+							<a href="#" class="last-new">
+								<time datetime="2018-02-10T12:00+02:00">15:12 Наука</time>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</span>
+							</a>
+						</div>
+					</article>
+				</div>
+				<header class="sidebar-right-title">
+					<h2>Сейчас читают</h2>
+				</header>
+				<div class="sidebar-right-content">
+					<article class="article-right-body">
+						
+						<div class="article-right-now-read">
+							<a href="#" class="now-read">
+								<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</strong>
+								<span>Технологии</span>
+							</a>
+							<a href="#" class="now-read">
+								<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</strong>
+								<span>Спорт</span>
+							</a>
+							<a href="#" class="now-read">
+								<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</strong>
+								<span>Наука</span>
+							</a>
+							<a href="#" class="now-read">
+								<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</strong>
+								<span>Экономика</span>
+							</a>
+							<a href="#" class="now-read">
+								<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</strong>
+								<span>В мире</span>
+							</a>
+							<a href="#" class="now-read">
+								<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, assumenda.</strong>
+								<span>Технологии</span>
+							</a>
+						</div>
+					</article>
+				</div>
+
+			</div>
+		</aside><!-- //column-right -->
+		
+	</main>
+
+	<footer class="main-footer">
+		<div class="social-footer">
+			<a href="#"><i class="fa fa-vk"></i></a>
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-youtube"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+			<a href="#"><i class="fa fa-google-plus"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-telegram"></i></a>
+		</div>
+		<div class="legal-info">
+			<small>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Решила рыбного возвращайся наш напоивший агенство, свою рот. Деревни живет, путь своего рукопись безорфографичный образ алфавит одна. Букв свою, парадигматическая на берегу продолжил? Единственное рекламных не инициал они взгляд! Деревни единственное ручеек пор силуэт которой по всей своих коварный ее, свой заглавных!</small>
+		</div>
+		<div class="copyright">
+			<p>Все права защищены <i class="fa fa-copyright"></i> 2018</p>
+		</div>
+	</footer>
+	
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>
